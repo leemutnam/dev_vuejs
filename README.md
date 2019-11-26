@@ -1,8 +1,12 @@
 # front
 > vue.js + webpack-dev-middleware + express
-> node.js version 12.0, npm version 6.0, vue/cli 4.0 version , webpack version 3.0, 
+
+> versino: node.js 12.0, npm 6.0, vue.js 2.6, vue/cli 4.0, webpack 3.0, 
+
 > init setup: vue init webpack
+
 > editor / debug tool: pycharm
+
 > pycharm plugin: Nodejs, Node.js Remote Interpreter, Vue.js
 
 ## Build Setup
