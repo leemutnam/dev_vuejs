@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <iframe src="http://localhost:8080/#/test" frameborder="0" width="600" height="1000"></iframe>
     <ul>
       <li>
         <a
