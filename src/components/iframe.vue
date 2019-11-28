@@ -1,6 +1,23 @@
 <template>
   <div class="iframe">
-    <p>{{one_result}}</p>
+    <p>iframe 태그 영역</p>
+    <div v-if="one_result">
+      <p>RESULT</p>
+      <table>
+        <tr>
+          <th>id</th>
+          <th>employee_name</th>
+          <th>employee_salary</th>
+          <th>employee_age</th>
+        </tr>
+        <tr>
+          <td>{{one_result.data.id}}</td>
+          <td>{{one_result.data.employee_name}}</td>
+          <td>{{one_result.data.employee_salary}}</td>
+          <td>{{one_result.data.employee_age}}</td>
+        </tr>
+      </table>
+    </div>
     <input type="text" v-model="name">
     <button @click="finder(name, result)">이름 검색</button>
     <p v-for="(re, index) in result" v-bind:key="index">{{re.employee_name}}</p>

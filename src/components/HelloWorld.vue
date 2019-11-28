@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <iframe src="http://localhost:8080/#/test" frameborder="0" width="600" height="1000"></iframe>
+    <iframe src="http://localhost:8080/#/test" frameborder="1" width="600" height="1000"></iframe>
     <ul>
       <li>
         <a
@@ -88,7 +88,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'TEST SPA SAMPLE'
     }
   }
 }
