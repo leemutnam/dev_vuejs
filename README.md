@@ -31,4 +31,11 @@ npm run unit
 npm test
 ```
 
+## 이슈
+```
+linux에서 npm 으로 phantomjs 를 설치할 경우 에러가 발생함.
+npm 으로 phantomjs-prebuilt 패키지를 설치하면 
+phantomjs에 대한 링크를 만들고 (sudo 권한 필요) phantomjs 에 의존성을 지닌 패키지 설치시 에러가 발생하지 않는다 
+```
+
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
