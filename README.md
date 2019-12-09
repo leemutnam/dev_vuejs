@@ -9,18 +9,13 @@
 
 > pycharm plugin: Nodejs, Remote Interpreter, Vue.js
 ## Set-Up
-0. 로컬에 패키지 설치 [option]
-```
-npm install
-```
 1. config 추가
 ```
-touch _provisioning/configuration/root/etc/config.json
+$ touch _provisioning/configuration/root/etc/config.json
 ```
 2. id_rsa 추가
 ```
-cd _provisioning/configuration/root/.ssh
-sudo cp ~/.ssh/id_rsa .
+$ cp ~/.ssh/id_rsa _provisioning/configuration/root/.ssh/
 ```
 3. 프로젝트 이름 및 경로 수정
 ```
@@ -30,6 +25,7 @@ common.yml -> project_path = opt/{project name}
 ```
 4. 가상환경 생성
 ```
+cd _provisioning
 vagrant up
 ```
 5. pycharm SFTP 연동
