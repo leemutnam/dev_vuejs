@@ -1,17 +1,51 @@
-# front
-> vue.js + webpack-dev-middleware + express
+# Front
+> vue.js + webpack
 
-> versino: node.js 12.0, npm 6.0, vue.js 2.6, vue/cli 4.0, webpack 3.0, 
+> version: node.js 12.0, npm 6.0, vue.js 2.6, vue/cli 4.0, webpack 3.0, 
 
 > init setup: vue init webpack
 
 > editor / debug tool: pycharm
 
-> pycharm plugin: Nodejs, Node.js Remote Interpreter, Vue.js
-
+> pycharm plugin: Nodejs, Remote Interpreter, Vue.js
+## Set-Up
+0. 로컬에 패키지 설치 [option]
+```
+npm install
+```
+1. config 추가
+```
+touch _provisioning/configuration/root/etc/config.json
+```
+2. id_rsa 추가
+```
+cd _provisioning/configuration/root/.ssh
+sudo cp ~/.ssh/id_rsa .
+```
+3. 프로젝트 이름 및 경로 수정
+```
+config.json -> vagrant.name = {project name}
+config.json -> git.repo = {remote repository}
+common.yml -> project_path = opt/{project name}
+```
+4. 가상환경 생성
+```
+vagrant up
+```
+5. pycharm SFTP 연동
+```
+Tools - deployment - configuration - connection/mapping
+Tools - deployment - check Automatic Upload
+```
+6. 개발환경 시작
+```
+vagrant ssh
+cd /opt/{project name}
+npm run start
+```
 ## Build Setup
 
-``` bash
+```
 # install dependencies
 npm install
 
